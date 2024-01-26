@@ -10,7 +10,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full xl:py-4 py-10 min-h-[calc(100vh-54px)] md:min-h-[calc(100vh-94px)] xl:h-[calc(100vh-94px)] x;:min-h-auto bg-[url('/assets/heroBg.svg')] bg-cover bg-center overflow-x-hidden">
+    <div className="w-full xl:py-4 py-10 min-h-[calc(100vh-54px)] md:h-[calc(100vh-70px)] clg:h-[calc(100vh-94px)] bg-[url('/assets/heroBg.svg')] bg-cover bg-center overflow-x-hidden">
       <Wrapper style='h-full'>
         <div className='w-full h-full grid gap-2 sm:gap-12 grid-cols-1 md:grid-cols-[1.1fr,1fr] justify-center items-center'>
           {/* left portion ---->  */}
