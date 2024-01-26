@@ -28,21 +28,21 @@ const Navibar = () => {
   return (
     <React.Fragment>
       <div className='w-full bg-white-1 headerSha'>
-        <div className='w-full z-0 m-auto max-w-[1400px] py-1 h-[54px] md:h-[94px] px-4 md:px-8 gap-4 flex justify-between items-center'>
+        <div className='w-full z-0 m-auto max-w-[1400px] py-1 h-[54px] md:h-[70px] clg:h-[90px] px-4 md:px-8 gap-4 flex justify-between items-center'>
           {/* logo -->  */}
-          <div className='w-[110px] md:w-[170px] h-[50px] md:h-[70px] relative'>
+          <div className='w-[110px] md:w-[140px] md:h-[60px] clg:w-[170px] h-[50px] clg:h-[70px] relative'>
             <Image src='/assets/logo.svg' alt='' fill className='object-fill' />
           </div>
           {/* right por ---->  */}
           <div className='hidden clg:flex justify-center items-center gap-4 xl:gap-8'>
             {/* search bar ------> */}
-            <div className='w-fit pl-4 xl:pl-8 pr-4 xl:pr-14 text-[16px] text-black-3 font-semibold py-[16px] border-[1px] border-white-2 rounded-lg'>
+            <div className='w-fit pl-4 xl:pl-8 pr-4 xl:pr-14 text-[12px] xl:text-[14px] 1xl:text-[16px] text-black-3 font-semibold py-[14px] border-[1px] border-white-2 rounded-lg'>
               {t('common:how_search')}
             </div>
             {/* docs --->  */}
             <Link
               href='#'
-              className='text-black-3 text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
+              className='text-black-3 text-[12px] xl:text-[14px] 1xl:text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
             >
               {' '}
               {t('common:docs')}
@@ -50,7 +50,7 @@ const Navibar = () => {
             {/* Browse users --> */}
             <Link
               href='#'
-              className='text-black-3 text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
+              className='text-black-3 text-[12px] xl:text-[14px] 1xl:text-[16px] font-semibold relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] after:bg-purple-1 hover:after:w-full after:duration-200'
             >
               {' '}
               {t('common:browse_users')}
@@ -66,7 +66,7 @@ const Navibar = () => {
                 onClick={() => setOpenMenu(!openMenu)}
                 className='hover:opacity-80'
               >
-                <FaEarthAmericas className='text-[30px] text-purple-1 ' />
+                <FaEarthAmericas className='text-[28px] 1xl:text-[30px] text-purple-1 ' />
               </button>
               {openMenu && (
                 <div className='min-w-[160px] bg-white-1 flex flex-col px-2 py-2 rounded-lg shadow-xl absolute top-11 -left-[55px]'>
@@ -82,7 +82,7 @@ const Navibar = () => {
                           currentLanguage === item.key
                             ? 'text-purple-1'
                             : 'text-black-1'
-                        } hover:text-purple-1 capitalize text-[16px] font-medium`}
+                        } hover:text-purple-1 capitalize text-[14px] 1xl:text-[16px] font-medium`}
                       >
                         {item.name}
                       </button>
@@ -105,7 +105,7 @@ const Navibar = () => {
           </div>
           {/* hamburger for small scren ---->  */}
           <button className='clg:hidden block' onClick={toggleDrawer}>
-            <RxHamburgerMenu className='text-[30px] md:text-[45px] text-purple-1' />
+            <RxHamburgerMenu className='text-[30px] md:text-[40px] clg:text-[45px] text-purple-1' />
           </button>
         </div>
       </div>
