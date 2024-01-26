@@ -23,6 +23,7 @@ const config: Config = {
         lg: '976px',
         clg: '1182px',
         xl: '1280px',
+        '1xl': '1400px',
       },
       colors: {
         black: {
